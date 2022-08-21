@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DiseasePredictor</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="chronic_diseases">Chronic Diseases</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="cancel">Cancel</string>
+    <string name="gps_network_not_enabled">GPS Network Not Enaled</string>
+    <string name="open_location_settings">Open Location Settings</string>
+</resources>

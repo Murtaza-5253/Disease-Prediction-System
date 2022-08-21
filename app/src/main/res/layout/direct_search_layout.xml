@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/doctor"
+        android:layout_above="@+id/txtDirDisease"
+        android:layout_marginBottom="20dp">
+    </ImageView>
+    <TextView
+        android:id="@+id/txtDirDisease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+        android:editable="false"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/mons"
+        android:layout_centerInParent="true"
+        android:hint="Symp4"
+        android:onClick="Disease"
+        android:padding="20dp"
+        android:text="Select"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/txtDirDisease"
+        android:onClick="DSearch"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/mons"
+        android:textSize="18sp"
+        android:background="@drawable/box"
+        android:text="Search" />
+
+</RelativeLayout>

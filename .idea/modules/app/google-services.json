@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "588049702023",
+    "project_id": "diseasepredictor-3c036",
+    "storage_bucket": "diseasepredictor-3c036.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588049702023:android:40a887da3f70657ad72c22",
+        "android_client_info": {
+          "package_name": "com.igc.diseasepredictor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588049702023-e2dh8vpe3ipptk2am616p1csei1j9cab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.igc.diseasepredictor",
+            "certificate_hash": "19c733f3ed5b245acda7824d286692d4eeae5a9f"
+          }
+        },
+        {
+          "client_id": "588049702023-olg6ketm4189v1d1u2f0g9ain3qtb1ci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCqkWOF6yhIw_sDs-33fcF0K-HIoFAt2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588049702023-olg6ketm4189v1d1u2f0g9ain3qtb1ci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

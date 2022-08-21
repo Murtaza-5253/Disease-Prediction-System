@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="@color/colorPrimary"
+    android:dividerPadding="22dp"
+    android:showDividers="middle">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/mons"
+                android:gravity="center"
+                android:shadowColor="@color/colorPrimary"
+                android:text="@string/chronic_diseases"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp"
+                android:padding="10dp"
+                android:layout_margin="8dp"/>
+            <TextView
+                android:id="@+id/txtIChronic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/englebert"
+                android:gravity="center"
+                android:shadowColor="@color/colorPrimary"
+                android:text="@string/chronic_diseases"
+                android:textAlignment="center"
+                android:textColor="#205072"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@color/colorPrimary"
+                android:dividerPadding="22dp"
+                android:showDividers="middle"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mons"
+                    android:gravity="center"
+                    android:shadowColor="@color/colorPrimary"
+                    android:text="Your Predicted Covid Report"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp"
+                    android:padding="10dp"
+                    android:layout_margin="8dp"/>
+                <TextView
+                    android:id="@+id/txtItrace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/englebert"
+                    android:gravity="center"
+                    android:shadowColor="@color/colorPrimary"
+                    android:textAlignment="center"
+                    android:textColor="#205072"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@color/colorPrimary"
+                android:dividerPadding="22dp"
+                android:showDividers="middle"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mons"
+                    android:gravity="center"
+                    android:shadowColor="@color/colorPrimary"
+                    android:text="Precautions"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp"
+                    android:padding="10dp"
+                    android:layout_margin="8dp"/>
+                <TextView
+                    android:id="@+id/txtIPrec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/englebert"
+                    android:gravity="start"
+                    android:shadowColor="@color/colorPrimary"
+                    android:textColor="#205072"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="@color/colorPrimary"
+                android:dividerPadding="22dp"
+                android:showDividers="middle"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/mons"
+                    android:gravity="center"
+                    android:shadowColor="@color/colorPrimary"
+                    android:text="Necessary Medications"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp"
+                    android:padding="10dp"
+                    android:layout_margin="8dp"/>
+                <TextView
+                    android:id="@+id/txtIMed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/englebert"
+                    android:gravity="end"
+                    android:shadowColor="@color/colorPrimary"
+                    android:textColor="#205072"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

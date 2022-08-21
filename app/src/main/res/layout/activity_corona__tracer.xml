@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.Corona_Tracer_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/d3">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"></include>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/linear"
+                android:orientation="vertical"
+                android:background="@drawable/d4">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select if you have Chronic Diseases"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:fontFamily="casual"
+                    android:padding="5dp"
+                    android:shadowColor="#000000"
+                    android:textColor="@android:color/black"
+                    android:textColorHighlight="#707070"
+                    android:textColorLink="#000000"
+                    android:textSize="24sp"
+                    android:layout_margin="10dp"/>
+
+                <Spinner
+                    android:id="@+id/spnChronic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:padding="18dp"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trace Corona Symptoms"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:fontFamily="casual"
+                    android:padding="5dp"
+                    android:shadowColor="#000000"
+                    android:textColor="@android:color/black"
+                    android:textColorHighlight="#707070"
+                    android:textColorLink="#000000"
+                    android:textSize="24sp"
+                    android:layout_margin="10dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lstCorona"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"/>
+                <Button
+                    android:id="@+id/btnTrace"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/mons"
+                    android:textSize="18sp"
+                    android:onClick="Trace"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/box"
+                    android:text="Trace" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

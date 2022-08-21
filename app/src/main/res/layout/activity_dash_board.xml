@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drwlLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    tools:context=".activities.DashBoard_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"></include>
+
+        <LinearLayout
+            android:id="@+id/lytwel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Welcome back!"
+                android:textColor="#205072"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:text="What are you looking for?"
+                android:textColor="@android:color/background_dark"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lytwel"
+            android:layout_marginTop="12dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:columnCount="1"
+                android:columnOrderPreserved="true"
+                android:rowCount="2">
+
+                <Button
+                    android:id="@+id/btnDiseasePredict"
+                    android:layout_width="0dp"
+                    android:onClick="DPredictor"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/gradientds"
+                    android:drawableEnd="@drawable/diseasepred"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="\t\t\tDisease Predictor"
+                    android:textAlignment="textStart"
+                    android:textColor="#205072"
+                    android:textColorHighlight="#707070"
+                    android:textColorLink="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btnCoronaTracer"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/d1"
+                    android:drawableStart="@drawable/coronoa"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Corona Tracer\t\t\t"
+                    android:onClick="DPredictor"
+                    android:textAlignment="textEnd"
+                    android:textColor="#205072"
+                    android:textColorHighlight="#707070"
+                    android:textColorLink="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></Button>
+
+                <Button
+                    android:id="@+id/btnHpFinder"
+                    android:layout_width="0dp"
+                    android:onClick="DPredictor"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/gradientds"
+                    android:drawableEnd="@drawable/hospital"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="\t\t\tHospitals Finder"
+                    android:textAlignment="textStart"
+                    android:textColor="#205072"
+                    android:textColorHighlight="#707070"
+                    android:textColorLink="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </Button>
+
+
+
+
+            </GridLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tooll"
+        android:layout_gravity="start"
+        app:menu="@menu/dashboard_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

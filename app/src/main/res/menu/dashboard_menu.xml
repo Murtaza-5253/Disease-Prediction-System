@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="For You">
+        <menu >
+            <item android:id="@+id/mnuPredict" android:title="Disease Predictor" android:icon="@drawable/diseasepred"></item>
+            <item android:id="@+id/mnuTrace" android:title="Corona Tracer" android:icon="@drawable/coronoa"></item>
+            <item android:id="@+id/mnuHpFind" android:title="Hospitals Finder" android:icon="@drawable/hospital"></item>
+        </menu>
+    </item>
+
+
+</menu>
